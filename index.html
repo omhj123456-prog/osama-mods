@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101713">
+  <title>OSAMA MODS | إضافات ماين كرافت بيدروك</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body data-theme="normal">
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="OSAMA MODS">
+      <span class="brand-mark">OM</span>
+      <span><strong>OSAMA MODS</strong><small>إضافات Minecraft Bedrock</small></span>
+    </a>
+    <div class="theme-controls" aria-label="تغيير المظهر">
+      <button type="button" data-theme-choice="normal" aria-pressed="true">الطبيعي</button>
+      <button type="button" data-theme-choice="light" aria-pressed="false">النهاري</button>
+      <button type="button" data-theme-choice="pink" aria-pressed="false">البناتي</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">MINECRAFT BEDROCK • ADDONS</p>
+      <h1>اكتشف إضافتك القادمة</h1>
+      <p class="hero-copy">إضافات ماين كرافت بيدروك في مكان واحد.</p>
+      <div class="hero-stats"><span>تصفح الإضافات</span><span>•</span><span>ابحث بالاسم</span></div>
+    </section>
+
+    <section class="catalog" aria-labelledby="catalog-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">المكتبة</p><h2 id="catalog-title">الإضافات المتاحة</h2></div>
+        <span id="mod-count" class="count">جارٍ التحميل…</span>
+      </div>
+      <div class="filters">
+        <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="ابحث عن مود..." autocomplete="off"></label>
+        <select id="category" aria-label="تصفية حسب التصنيف"><option value="">كل التصنيفات</option></select>
+      </div>
+      <div id="status" class="status" role="status">جارٍ تحميل الإضافات…</div>
+      <div id="mods-grid" class="mods-grid"></div>
+    </section>
+  </main>
+
+  <footer><strong>OSAMA MODS</strong><span>صُنع لمحبي Minecraft Bedrock</span></footer>
+  <script src="./script.js" defer></script>
+</body>
+</html>
